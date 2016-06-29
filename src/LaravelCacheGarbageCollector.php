@@ -47,19 +47,24 @@ class LaravelCacheGarbageCollector extends Command
                 continue;
             }
 
-            // Grab the contents of the file
-            $contents = \Storage::disk('fcache')->get($cachefile);
+            try {
+                // Grab the contents of the file
+                $contents = \Storage::disk('fcache')->get($cachefile);
 
-            // Get the expiration time
-            $expire = substr($contents, 0, 10);
+                // Get the expiration time
+                $expire = substr($contents, 0, 10);
 
-            // See if we have expired
-            if(time() >= $expire) {
-                // Delete the file
-                \Storage::disk('fcache')->delete($cachefile);
-                $expired_file_count++;
-            } else {
-                $active_file_count++;
+                // See if we have expired
+                if(time() >= $expire) {
+                    // Delete the file
+                    \Storage::disk('fcache')->delete($cachefile);
+                    $expired_file_count++;
+                } else {
+                    $active_file_count++;
+                }
+            } catch(\Illuminate\Contracts\Filesystem\FileNotFoundException $e) {
+                // Getting an occasional error of this type on the 'get' command above,
+                // so adding a try-catch to skip the file if we do.
             }
         }
 
