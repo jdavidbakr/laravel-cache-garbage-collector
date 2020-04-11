@@ -3,6 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
+[![Travis CI][ico-travis]][link-travis]
 
 When using the file cache driver, Laravel creates the cache files but never purges expired ones. This can lead to
 a situation where you have a large number of unused and irrelevant cache files, especially if you do a lot of short-term
@@ -50,17 +51,17 @@ If you discover any security related issues, please email me@jdavidbaker.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/jdavidbakr/LaravelCacheGarbageCollector.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/jdavidbakr/laravel-cache-grabage-collector.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jdavidbakr/LaravelCacheGarbageCollector/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jdavidbakr/LaravelCacheGarbageCollector.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jdavidbakr/LaravelCacheGarbageCollector.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jdavidbakr/LaravelCacheGarbageCollector.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/jdavidbakr/laravel-cache-grabage-collector/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jdavidbakr/laravel-cache-grabage-collector.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/jdavidbakr/laravel-cache-grabage-collector.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/jdavidbakr/laravel-cache-grabage-collector.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jdavidbakr/laravel-cache-garbage-collector
-[link-travis]: https://travis-ci.org/jdavidbakr/LaravelCacheGarbageCollector
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jdavidbakr/LaravelCacheGarbageCollector/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jdavidbakr/LaravelCacheGarbageCollector
-[link-downloads]: https://packagist.org/packages/jdavidbakr/LaravelCacheGarbageCollector
+[link-travis]: https://travis-ci.org/jdavidbakr/laravel-cache-grabage-collector
+[link-scrutinizer]: https://scrutinizer-ci.com/g/jdavidbakr/laravel-cache-grabage-collector/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/jdavidbakr/laravel-cache-grabage-collector
+[link-downloads]: https://packagist.org/packages/jdavidbakr/laravel-cache-grabage-collector
 [link-author]: https://github.com/jdavidbakr
 [link-contributors]: ../../contributors
